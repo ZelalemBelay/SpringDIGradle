@@ -1,0 +1,30 @@
+buildscript {
+
+	repositories {
+		mavenCentral()
+	}
+}
+
+apply plugin: 'java'
+
+
+jar {
+	baseName = 'SpringDIGradle'
+	version = '0.0.1-SNAPSHOT'
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies{
+	compile 'commons-logging:commons-logging:1.1.1'
+	compile 'org.springframework:spring-webmvc-portlet:4.2.6.RELEASE'
+	compile 'org.springframework:spring-context-support:4.2.6.RELEASE'
+	compile 'org.springframework:spring-context:3.1.4.RELEASE'
+	compile 'org.springframework:spring-core:4.3.4.RELEASE'
+	compile 'org.springframework:spring-aop:3.1.4.RELEASE'
+	compile 'org.springframework:spring-beans:3.1.4.RELEASE'
+}
