@@ -1,14 +1,15 @@
 package com.example;
 
-import org.junit.Assert;
+
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 
 public class DemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		Assert.assertEquals("abc", "abc");
+		assertEquals("abc", "abc");
 	}
 
 }
